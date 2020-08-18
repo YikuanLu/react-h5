@@ -1,0 +1,10 @@
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+**/*.less
+package.json
+/.vscode
+.umi
+.umi-production
+.umi-test

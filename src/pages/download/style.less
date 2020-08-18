@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7F7F7;
+  .bg {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .main {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    .logo {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .btn {
+      width: 138px;
+      height: 44px;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      border-radius: 100px;
+      background-color: #fff;
+      font-size: 16px;
+      color: #444FA0;
+      font-weight: bold;
+      margin: 40px auto 0;
+    }
+  }
+}

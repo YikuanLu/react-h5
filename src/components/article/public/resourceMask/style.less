@@ -1,0 +1,73 @@
+.imgWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .sourceItem {
+    width: 33%;
+    height: 0;
+    padding-top: 33%;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    background-size: cover;
+
+    img {
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .useHeight {
+      height: 100%;
+    }
+
+    .useWidth {
+      width: 100%;
+    }
+
+    .time {
+      position: absolute;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 1);
+      font-size: 10px;
+      line-height: 10px;
+      bottom: 5px;
+      right: 5px;
+      z-index: 1;
+    }
+    .sourceType {
+      position: absolute;
+      padding: 3px 4px;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.6);
+      font-weight: 600;
+      color: rgba(255, 255, 255, 1);
+      font-size: 10px;
+      line-height: 10px;
+      bottom: 5px;
+      right: 5px;
+      z-index: 1;
+    }
+
+    .sourceMask {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 1);
+      top: 0;
+      left: 0;
+      z-index: 2;
+      align-items: center
+    }
+  }
+
+  .sourceItem:nth-child(2n) {
+    margin: 0 5px;
+  }
+}

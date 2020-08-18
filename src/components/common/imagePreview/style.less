@@ -1,0 +1,54 @@
+
+@keyframes toTransparent {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.hide {
+  -webkit-animation: toTransparent linear .3s 1;
+  animation: toTransparent linear .3s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.previewImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 9999;
+  overflow: hidden;
+  .previewWrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .wrapperItem {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        transform: translateZ(0);
+      }
+    }
+  }
+  .previewIndicator {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-size: 14.4px;
+    color: #ccc;
+    font-weight: 500;
+    text-align: center;
+    bottom: 10vh;
+  }
+}

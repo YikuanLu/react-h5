@@ -1,0 +1,70 @@
+.wrap {
+  width: 100%;
+  background-color: white;
+
+  .content {
+    background-color: white;
+    padding: 15px;
+
+    .replyItem {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+
+      .headIcon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      &>div {
+        width: 295px;
+        display: flex;
+        flex-direction: column;
+
+        .userInfo {
+          font-size: 14px;
+          line-height: 14px;
+          color: rgba(51, 51, 51, 0.4);
+          margin-bottom: 7px;
+        }
+
+        .replyContent {
+          width: 256px;
+          background-color: white;
+        }
+
+        .parReplyContent {
+          margin-bottom: 12px;
+        }
+
+        .parReplyInfo {
+          // width: 295px;
+          background: rgba(247, 247, 247, 1);
+          border-radius: 4px;
+          padding: 12px 15px 15px;
+          margin-top: 10px;
+        }
+
+        .photoWall {
+          margin-top: 20px;
+        }
+
+        .parPhotoWall {
+          margin-top: 12px;
+        }
+      }
+
+      .bulb {
+        width: unset;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

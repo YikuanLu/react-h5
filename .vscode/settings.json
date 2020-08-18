@@ -1,0 +1,54 @@
+{
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "search.followSymlinks": false,
+  "editor.wordWrap": "on",
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": false,
+  "eslint.enable": true,
+  "eslint.options": {
+    "extensions": [
+      ".ts",
+      ".js",
+      ".jsx",
+      ".tsx"
+    ],
+    "plugins": [
+      "html",
+    ]
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/build": true,
+  },
+  "dart.sdkPath": "/Users/luyikuan/flutter_dev/flutter/bin/cache/dart-sdk",
+  // eslint end
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": false
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.rendererType": "dom",
+  "emmet.triggerExpansionOnTab": true,
+  "git.autofetch": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "px-to-rem.px-per-rem": 12
+}

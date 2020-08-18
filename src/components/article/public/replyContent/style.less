@@ -1,0 +1,115 @@
+div {
+  .replyContent {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+
+  .replyContentIndentation {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    margin: 0;
+  }
+
+  .collapse {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    z-index: 1;
+
+    span::before {
+      content: '';
+      position: absolute;
+      left: -90px;
+      display: block;
+      width: 90px;
+      height: 20px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%)
+    }
+  }
+
+  .tooLong {
+    // float: right;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  .openBtn {
+    color: rgba(44, 102, 214, 1);
+  }
+}
+
+.largeWhite {
+  .replyContent {
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+  .replyContentIndentation {
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+  .collapse {
+    line-height: 22px;
+    background-color: white;
+  }
+
+  .tooLong {
+    line-height: 22px;
+    background-color: white;
+  }
+
+  .openBtn {
+    font-size: 16px;
+  }
+}
+
+.smallGrey {
+  .replyContent {
+    line-height: 20px;
+    font-size: 14px;
+    background-color: rgba(247, 247, 247, 1);
+    color: rgba(154, 154, 154, 1);
+  }
+
+  .replyContentIndentation {
+    line-height: 20px;
+    font-size: 14px;
+    background-color: rgba(247, 247, 247, 1);
+    -webkit-line-clamp: 5;
+    color: rgba(154, 154, 154, 1);
+  }
+
+  .collapse {
+    line-height: 20px;
+    background-color: rgba(247, 247, 247, 1);
+
+    span::before {
+      content: '';
+      position: absolute;
+      left: -90px;
+      display: block;
+      width: 90px;
+      height: 20px;
+      background: linear-gradient(to right, rgba(247, 247, 247, 0), rgba(247, 247, 247, 1) 90%)
+    }
+  }
+
+  .tooLong {
+    line-height: 20px;
+    background-color: rgba(247, 247, 247, 1);
+  }
+
+  .openBtn {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,177 @@
+.wrap {
+  width: 100%;
+  background-color: white;
+
+  .articleSingleLineTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .articleDoubleLineTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    line-height: 22px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .recommendationPicItem {
+    margin: 12px 15px;
+    border-bottom: 1px solid rgba(247, 247, 247, 1);
+    padding-bottom: 15px;
+
+
+    .photoWall {
+      margin-bottom: 15px;
+    }
+
+    .ReplylikeBox {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      span {
+        font-size: 12px;
+        color: rgba(51, 51, 51, .6);
+        line-height: 12px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .recommendationVideoItem {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .leftWrap {
+      position: relative;
+      margin-right: 15px;
+
+      .cover {
+        display: block;
+        width: 128px;
+        height: 72px;
+        border-radius: 4px;
+        background-size: cover;
+      }
+
+      span {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        line-height: 12px;
+        z-index: 1;
+      }
+    }
+
+    .rightWrap {
+      width: 100%;
+      height: 100%;
+
+      .articleDoubleLineTitle {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+        line-height: 21px;
+        margin: 0;
+      }
+
+      .ReplylikeBox {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+          font-size: 12px;
+          color: rgba(51, 51, 51, .6);
+          line-height: 12px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+  }
+
+  .recommendationInformationItem {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .rightWrap {
+      position: relative;
+      margin-left: 15px;
+
+      .cover {
+        display: block;
+        width: 128px;
+        height: 72px;
+        border-radius: 4px;
+        background-size: cover;
+      }
+
+      span {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        line-height: 12px;
+        z-index: 1;
+      }
+    }
+
+    .leftWrap {
+      width: 100%;
+      height: 100%;
+
+      .articleDoubleLineTitle {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+        line-height: 21px;
+      }
+
+      .ReplylikeBox {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+          font-size: 12px;
+          color: rgba(51, 51, 51, .6);
+          line-height: 12px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+  }
+
+  .openAppBtn {
+    width: 345px;
+    margin: 30px auto 15px;
+  }
+}
